@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {% for student in students %}
+
+        <img src="{{ student.image.url }}" height="100" width="100" />
+        <h4>{{ student.name }}</h4>
+        <p>{{ student.email }}</p>
+        <p>{{ student.phone }}</p>
+        <p>{{ student.address }}</p>
+
+    {% endfor %}
+    
+</body>
+</html>
